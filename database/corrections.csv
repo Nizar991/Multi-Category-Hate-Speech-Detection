@@ -1,0 +1,22 @@
+id,sentence,predicted_category,correct_category,confidence,created_at
+8,Good Morning,Insult,Neutral,0.5236999999999999,2026-08-18T12:31:34
+9,I went to the bar last night and saw a very drunk woman. She looked horrid.,Sexual Abuse,Insult,0.9872,2026-08-18T17:24:36
+10,During my travel to the city center i met a very friendly man on the bus. He told me all kinds of funny stories.,Sexual Abuse,Neutral,0.9994,2026-08-18T17:26:42
+11,It was raining heavy today. I went out to the cold weather on my evening walk.,Insult,Neutral,0.5914,2026-08-18T17:28:22
+12,My friend looked fat yesterday,Racism,Insult,0.7954000000000001,2026-08-18T17:29:41
+13,please fasten your seatbelt,Insult,Neutral,0.4982,2026-08-18T21:26:29
+14,I'm very thirsty. Can you give me a glass of water?,Insult,Neutral,0.9987999999999999,2026-08-18T21:27:16
+15,"That lady is so hot, I want to spend the night with her",Racism,Sexual Abuse,0.8412999999999999,2026-08-18T21:29:09
+16,He is sleeping in his lovely chair,Insult,Neutral,0.7453,2026-08-18T21:33:08
+17,the apple is so juice! where did you get them from?,Racism,Neutral,0.9752,2026-08-18T21:33:39
+18,I heard she is mother of two yet she's so drunk....what a shame!,Racism,Insult,0.6459999999999999,2026-08-18T21:36:36
+19,"Wow look at those butt, I want to get her phone number",Threat,Sexual Abuse,0.9933,2026-08-18T21:38:34
+20,Finish your homework or I will call your father,Insult,Threat,0.8785,2026-08-18T21:39:22
+21,did you book the taxi yet?,Racism,Neutral,0.3712,2026-08-18T21:41:24
+22,"hey sexy, what's your bra size?",Racism,Sexual Abuse,0.9890000000000001,2026-08-18T21:43:06
+23,I love pakistani people,Racism,Neutral,0.9983,2026-08-18T21:45:24
+24,can't you speak english? lol,Racism,Insult,0.991,2026-08-18T21:47:57
+25,I love those titties of yours. Can I touch them?,Insult,Sexual Abuse,0.9975,2026-08-18T21:50:10
+26,Did you eat your breakfast?,Insult,Neutral,0.9965,2026-08-18T21:55:26
+27,Wiping the table with your t-shirt? What a poor culture you're from,Racism,Insult,0.7371,2026-08-18T21:56:54
+28,Your girlfriend is really hot. I want to sleep with her,Insult,Sexual Abuse,0.8959,2026-08-18T21:59:49

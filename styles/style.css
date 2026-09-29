@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+    --bg: #0b0e14;
+    --bg-grid: #10141d;
+    --surface: #141926;
+    --surface-2: #1a2030;
+    --border: #262d3d;
+    --text: #e7eaf1;
+    --text-muted: #8b93a8;
+    --text-faint: #5c6478;
+
+    --accent: #5b8cff;
+    --accent-soft: rgba(91, 140, 255, 0.14);
+
+    --c-neutral: #34d399;
+    --c-insult: #fbbf24;
+    --c-racism: #fb923c;
+    --c-sexual: #f43f5e;
+    --c-threat: #dc2626;
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+.gradio-container {
+    background: var(--bg) !important;
+    background-image:
+        linear-gradient(var(--bg-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px) !important;
+    background-size: 42px 42px !important;
+    font-family: var(--font-body) !important;
+    color: var(--text) !important;
+}
+
+.gradio-container {
+    max-width: 1080px !important;
+    margin: auto !important;
+    padding-top: 36px !important;
+}
+
+/* ---------------- HEADER ---------------- */
+
+#eyebrow {
+    text-align: center;
+    font-family: var(--font-mono) !important;
+    font-size: 12px !important;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent) !important;
+    margin-bottom: 10px !important;
+}
+
+#main-title {
+    text-align: center;
+}
+
+#main-title h1 {
+    font-family: var(--font-display) !important;
+    font-weight: 700 !important;
+    font-size: 40px !important;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px 0 !important;
+    color: var(--text) !important;
+}
+
+#subtitle {
+    text-align: center;
+    color: var(--text-muted) !important;
+    font-size: 15px !important;
+    max-width: 520px;
+    margin: 0 auto 34px auto !important;
+    line-height: 1.55;
+}
+
+/* ---------------- CARDS ---------------- */
+
+.panel {
+    border-radius: 14px !important;
+    border: 1px solid var(--border) !important;
+    background: linear-gradient(180deg, var(--surface) 0%, var(--surface) 100%) !important;
+    padding: 22px !important;
+}
+
+.panel-label {
+    font-family: var(--font-mono) !important;
+    font-size: 11px !important;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-faint) !important;
+    margin: 0 0 14px 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.panel-label::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    display: inline-block;
+}
+
+/* Textbox */
+
+.input-console textarea {
+    background: var(--surface-2) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    color: var(--text) !important;
+    font-family: var(--font-body) !important;
+    font-size: 15px !important;
+    line-height: 1.5;
+}
+
+.input-console textarea:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px var(--accent-soft) !important;
+}
+
+.input-console label span {
+    display: none;
+}
+
+/* Button */
+
+#analyse-button {
+    width: 100%;
+    border-radius: 10px !important;
+    font-family: var(--font-display) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em;
+    background: var(--accent) !important;
+    border: none !important;
+    color: #0b0e14 !important;
+    padding: 12px 0 !important;
+    margin-top: 6px !important;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+#analyse-button:hover {
+    box-shadow: 0 0 22px var(--accent-soft) !important;
+    transform: translateY(-1px);
+}
+
+/* Examples */
+
+#example-set .gr-samples-table,
+#example-set table {
+    background: transparent !important;
+}
+
+#example-set button {
+    background: var(--surface-2) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text-muted) !important;
+    font-family: var(--font-mono) !important;
+    font-size: 12px !important;
+    border-radius: 8px !important;
+}
+
+/* ---------------- READOUT ---------------- */
+
+.readout-empty {
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    text-align: center;
+    padding: 18px 0 4px 0;
+}
+
+.category-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    padding: 4px 0;
+}
+
+.category-pill .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px currentColor;
+}
+
+.confidence-readout {
+    font-family: var(--font-mono);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.confidence-bar-track {
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.confidence-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.explanation-text {
+    color: var(--text-muted) !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-top: 16px !important;
+}
+
+.explanation-text strong {
+    color: var(--text) !important;
+}
+
+/* ---------------- SPECTRUM GAUGE (signature element) ---------------- */
+
+.gauge-wrap {
+    margin: 4px 0 24px 0;
+}
+
+.gauge-track {
+    position: relative;
+    display: flex;
+    height: 8px;
+    border-radius: 5px;
+    overflow: visible;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+}
+
+.gauge-segment {
+    flex: 1;
+    opacity: 0.35;
+    transition: opacity 0.4s ease;
+}
+
+.gauge-segment:not(:last-child) {
+    border-right: 1px solid var(--bg);
+}
+
+.gauge-segment.active {
+    opacity: 1;
+}
+
+.gauge-segment:nth-child(1) { background: var(--c-neutral); border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+.gauge-segment:nth-child(2) { background: var(--c-insult); }
+.gauge-segment:nth-child(3) { background: var(--c-racism); }
+.gauge-segment:nth-child(4) { background: var(--c-sexual); }
+.gauge-segment:nth-child(5) { background: var(--c-threat); border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+
+.gauge-pointer {
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--pointer-color, var(--accent));
+    border: 2px solid var(--bg);
+    box-shadow: 0 0 12px var(--pointer-color, var(--accent));
+    transform: translate(-50%, -50%);
+    transition: left 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gauge-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+}
+
+.gauge-labels span.active {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* ---------------- STATS ROW ---------------- */
+
+.stat-card {
+    border-radius: 12px !important;
+    border: 1px solid var(--border) !important;
+    background: var(--surface) !important;
+    padding: 16px 18px !important;
+    text-align: center;
+}
+
+.stat-card .stat-value {
+    font-family: var(--font-mono);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.stat-card .stat-label {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-top: 4px;
+}
+
+/* ---------------- ACCORDION ---------------- */
+
+.accordion-panel,
+#about-accordion {
+    border-radius: 14px !important;
+    border: 1px solid var(--border) !important;
+    background: var(--surface) !important;
+}
+
+#about-accordion .label-wrap span {
+    font-family: var(--font-display) !important;
+    font-weight: 600 !important;
+    color: var(--text) !important;
+}
+
+#about-accordion p,
+#about-accordion li {
+    color: var(--text-muted) !important;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+}
+
+#about-accordion strong {
+    color: var(--text) !important;
+}
+
+#about-accordion blockquote {
+    border-left: 2px solid var(--accent) !important;
+    color: var(--text-faint) !important;
+    font-size: 13px !important;
+    padding-left: 12px !important;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+    text-align: center;
+    color: var(--text-faint) !important;
+    font-family: var(--font-mono) !important;
+    font-size: 11px !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 34px 0 18px 0;
+}
+
+/* ---------------- ACCESSIBILITY ---------------- */
+
+button:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--accent) !important;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+@media (max-width: 700px) {
+    #main-title h1 {
+        font-size: 30px !important;
+    }
+}

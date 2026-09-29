@@ -1,0 +1,83 @@
+{
+    "method": "Grouped train-test split by feedback_id",
+    "random_seed": 42,
+    "total_source_sentences": 22,
+    "total_cases": 110,
+    "training_source_sentences": 17,
+    "testing_source_sentences": 5,
+    "training_feedback_ids": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+    ],
+    "testing_feedback_ids": [
+        8,
+        9,
+        16,
+        21,
+        23
+    ],
+    "training_cases": 85,
+    "testing_cases": 25,
+    "training_class_distribution": {
+        "Neutral": 30,
+        "Insult": 25,
+        "Sexual Abuse": 25,
+        "Threat": 5
+    },
+    "testing_class_distribution": {
+        "Neutral": 20,
+        "Insult": 5
+    },
+    "starting_training_accuracy": 12.941176470588237,
+    "starting_unseen_test_accuracy": 24.0,
+    "final_training_accuracy": 100.0,
+    "final_unseen_test_accuracy": 40.0,
+    "correct_unseen_predictions": 10,
+    "test_transformation_results": {
+        "Original": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 40.0
+        },
+        "Leetspeak": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 40.0
+        },
+        "Spacing": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 20.0
+        },
+        "Punctuation": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 40.0
+        },
+        "Typo": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 60.0
+        }
+    },
+    "epochs": 100,
+    "learning_rate": 0.005,
+    "reward_correct": 1,
+    "penalty_incorrect": -1,
+    "input_features": 2048
+}

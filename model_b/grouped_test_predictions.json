@@ -1,0 +1,227 @@
+[
+    {
+        "feedback_id": 8,
+        "sentence": "Good Morning",
+        "transformation": "Original",
+        "true_category": "Neutral",
+        "predicted_category": "Insult",
+        "confidence": 39.64959979057312,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 8,
+        "sentence": "G0od Morning",
+        "transformation": "Leetspeak",
+        "true_category": "Neutral",
+        "predicted_category": "Insult",
+        "confidence": 50.58140158653259,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 8,
+        "sentence": "G o o d Morning",
+        "transformation": "Spacing",
+        "true_category": "Neutral",
+        "predicted_category": "Insult",
+        "confidence": 50.85258483886719,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 8,
+        "sentence": "Good !!! Morning",
+        "transformation": "Punctuation",
+        "true_category": "Neutral",
+        "predicted_category": "Insult",
+        "confidence": 39.64959979057312,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 8,
+        "sentence": "Good Mroning",
+        "transformation": "Typo",
+        "true_category": "Neutral",
+        "predicted_category": "Insult",
+        "confidence": 50.407594442367554,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 9,
+        "sentence": "I went to the bar last night and saw a very drunk woman. She looked horrid.",
+        "transformation": "Original",
+        "true_category": "Insult",
+        "predicted_category": "Neutral",
+        "confidence": 50.5829393863678,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 9,
+        "sentence": "I w3nt t0 th3 b4r last night and saw a very drunk w0man. She l0oked horrid.",
+        "transformation": "Leetspeak",
+        "true_category": "Insult",
+        "predicted_category": "Insult",
+        "confidence": 58.294087648391724,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 9,
+        "sentence": "I w e n t to the bar last night and saw a very drunk woman. She looked horrid.",
+        "transformation": "Spacing",
+        "true_category": "Insult",
+        "predicted_category": "Neutral",
+        "confidence": 42.01180934906006,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 9,
+        "sentence": "I went !!! to the bar last night and saw a very drunk woman. She looked horrid.",
+        "transformation": "Punctuation",
+        "true_category": "Insult",
+        "predicted_category": "Neutral",
+        "confidence": 50.5829393863678,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 9,
+        "sentence": "I went to the bar last night and saw a vrey drunk woman. She looked horrid.",
+        "transformation": "Typo",
+        "true_category": "Insult",
+        "predicted_category": "Insult",
+        "confidence": 44.12056505680084,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 16,
+        "sentence": "He is sleeping in his lovely chair",
+        "transformation": "Original",
+        "true_category": "Neutral",
+        "predicted_category": "Neutral",
+        "confidence": 32.67218470573425,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 16,
+        "sentence": "He i5 sle3ping in his l0vely ch4ir",
+        "transformation": "Leetspeak",
+        "true_category": "Neutral",
+        "predicted_category": "Insult",
+        "confidence": 56.247156858444214,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 16,
+        "sentence": "He is sleeping in his l o v e l y chair",
+        "transformation": "Spacing",
+        "true_category": "Neutral",
+        "predicted_category": "Sexual Abuse",
+        "confidence": 40.2956485748291,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 16,
+        "sentence": "He is ??? sleeping in his lovely chair",
+        "transformation": "Punctuation",
+        "true_category": "Neutral",
+        "predicted_category": "Neutral",
+        "confidence": 32.67218470573425,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 16,
+        "sentence": "He is sleeping in his lovely chari",
+        "transformation": "Typo",
+        "true_category": "Neutral",
+        "predicted_category": "Neutral",
+        "confidence": 32.50910937786102,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 21,
+        "sentence": "did you book the taxi yet?",
+        "transformation": "Original",
+        "true_category": "Neutral",
+        "predicted_category": "Neutral",
+        "confidence": 80.19797801971436,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 21,
+        "sentence": "did you book th3 t4xi yet?",
+        "transformation": "Leetspeak",
+        "true_category": "Neutral",
+        "predicted_category": "Neutral",
+        "confidence": 64.62496519088745,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 21,
+        "sentence": "did you book the t a x i yet?",
+        "transformation": "Spacing",
+        "true_category": "Neutral",
+        "predicted_category": "Neutral",
+        "confidence": 90.3549313545227,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 21,
+        "sentence": "did you book the taxi --- yet?",
+        "transformation": "Punctuation",
+        "true_category": "Neutral",
+        "predicted_category": "Neutral",
+        "confidence": 80.19797801971436,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 21,
+        "sentence": "did you book the txai yet?",
+        "transformation": "Typo",
+        "true_category": "Neutral",
+        "predicted_category": "Neutral",
+        "confidence": 87.26351857185364,
+        "result": "PASS"
+    },
+    {
+        "feedback_id": 23,
+        "sentence": "I love pakistani people",
+        "transformation": "Original",
+        "true_category": "Neutral",
+        "predicted_category": "Sexual Abuse",
+        "confidence": 86.10535860061646,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 23,
+        "sentence": "I lov3 pakist4ni peopl3",
+        "transformation": "Leetspeak",
+        "true_category": "Neutral",
+        "predicted_category": "Sexual Abuse",
+        "confidence": 43.49513649940491,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 23,
+        "sentence": "I love pakistani p e o p l e",
+        "transformation": "Spacing",
+        "true_category": "Neutral",
+        "predicted_category": "Sexual Abuse",
+        "confidence": 86.90981864929199,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 23,
+        "sentence": "I --- love pakistani people",
+        "transformation": "Punctuation",
+        "true_category": "Neutral",
+        "predicted_category": "Sexual Abuse",
+        "confidence": 86.10535860061646,
+        "result": "FAIL"
+    },
+    {
+        "feedback_id": 23,
+        "sentence": "I love pakisatni people",
+        "transformation": "Typo",
+        "true_category": "Neutral",
+        "predicted_category": "Insult",
+        "confidence": 44.959720969200134,
+        "result": "FAIL"
+    }
+]
